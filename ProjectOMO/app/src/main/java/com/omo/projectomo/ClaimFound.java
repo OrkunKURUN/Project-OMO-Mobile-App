@@ -9,34 +9,33 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ClaimStolen extends AppCompatActivity {
+public class ClaimFound extends AppCompatActivity {
     private String idClaim;
     private StolenBikeDatabase dbManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.claim_stolen);
+        setContentView(R.layout.claim_found);
 
-        EditText id = (EditText) findViewById(R.id.idToClaim);
-        Button claim = (Button) findViewById(R.id.claimButton);
+        EditText id = (EditText) findViewById(R.id.idToDelete);
+        Button claim = (Button) findViewById(R.id.deleteButton);
         dbManager = new StolenBikeDatabase(this);
-
 
         claim.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 idClaim = id.getText().toString();
-                newRecord(idClaim);
-
+                deleteRecord(idClaim);
             }
         });
-    }
-    public boolean newRecord(String id){
-        SQLiteDatabase db = dbManager.getReadableDatabase();
-        db.execSQL("INSERT INTO stolenBikes VALUES('"+id+"')");
-        Toast.makeText(getApplicationContext(),"Record added!",Toast.LENGTH_LONG).show();
-        return true;
+
     }
 
+    public boolean deleteRecord(String id){
+        SQLiteDatabase db = dbManager.getReadableDatabase();
+        db.execSQL("DELETE FROM stolenBikes WHERE bike_id = '"+id+"'");
+        Toast.makeText(getApplicationContext(),"Record deleted!",Toast.LENGTH_LONG).show();
+        return true;
+    }
 }

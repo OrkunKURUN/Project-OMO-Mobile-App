@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button check = (Button) findViewById(R.id.buttonCheckStolen);
         Button claim = (Button) findViewById(R.id.buttonClaimStolen);
+        Button delete = (Button) findViewById(R.id.buttonClaimFound);
 
         check.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,6 +29,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(),ClaimStolen.class);
+                startActivity(i);
+            }
+        });
+        delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),ClaimFound.class);
                 startActivity(i);
             }
         });

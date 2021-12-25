@@ -8,4 +8,5 @@
     <string name="check">CHECK</string>
     <string name="claim_your_bike_stolen_using_id_number_of_your_bike">Claim your bike stolen using ID number of your bike.</string>
     <string name="claim">CLAIM</string>
+    <string name="claim_your_bike_found">CLAIM YOUR BIKE FOUND</string>
 </resources>
