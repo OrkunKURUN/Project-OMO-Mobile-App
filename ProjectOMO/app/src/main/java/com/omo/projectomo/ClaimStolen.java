@@ -32,11 +32,10 @@ public class ClaimStolen extends AppCompatActivity {
             }
         });
     }
-    public boolean newRecord(String id){
+    public void newRecord(String id){
         SQLiteDatabase db = dbManager.getReadableDatabase();
         db.execSQL("INSERT INTO stolenBikes VALUES('"+id+"')");
         Toast.makeText(getApplicationContext(),"Record added!",Toast.LENGTH_LONG).show();
-        return true;
     }
 
 }

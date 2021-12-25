@@ -32,10 +32,9 @@ public class ClaimFound extends AppCompatActivity {
 
     }
 
-    public boolean deleteRecord(String id){
+    public void deleteRecord(String id){
         SQLiteDatabase db = dbManager.getReadableDatabase();
         db.execSQL("DELETE FROM stolenBikes WHERE bike_id = '"+id+"'");
         Toast.makeText(getApplicationContext(),"Record deleted!",Toast.LENGTH_LONG).show();
-        return true;
     }
 }

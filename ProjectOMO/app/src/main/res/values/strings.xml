@@ -9,4 +9,5 @@
     <string name="claim_your_bike_stolen_using_id_number_of_your_bike">Claim your bike stolen using ID number of your bike.</string>
     <string name="claim">CLAIM</string>
     <string name="claim_your_bike_found">CLAIM YOUR BIKE FOUND</string>
+    <string name="result_of_the_query_will_be_shown_here">Result of the query will be shown here.</string>
 </resources>
