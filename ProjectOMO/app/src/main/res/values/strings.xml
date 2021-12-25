@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ProjectOMO</string>
+    <string name="check_a_bike_if_stolen">CHECK A BIKE IF STOLEN</string>
+    <string name="welcome"><![CDATA[Welcome to Project OMO! ©Orkun&Mustafa&Oğuzalp]]></string>
+    <string name="claim_your_bike_stolen">CLAIM YOUR BIKE STOLEN</string>
+    <string name="enter_id_number_of_bike">Enter ID number of bike</string>
+    <string name="example">Example: ABC12345678</string>
+    <string name="check">CHECK</string>
+    <string name="claim_your_bike_stolen_using_id_number_of_your_bike">Claim your bike stolen using ID number of your bike.</string>
+    <string name="claim">CLAIM</string>
+</resources>
