@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">ProjectOMO</string>
     <string name="check_a_bike_if_stolen">CHECK A BIKE IF STOLEN</string>
-    <string name="welcome"><![CDATA[Welcome to Project OMO! ©Orkun&Mustafa&Oğuzalp]]></string>
+    <string name="welcome"><![CDATA[Welcome to Project OMO! You can claim your bike stolen or found using ID number of your bike. Or if you looking for a used bike, check if it\'s stolen using its ID. We strongly reccomend you to take note of ID number of your bike somewhere for claiming it stolen easily if it gets stolen.]]></string>
     <string name="claim_your_bike_stolen">CLAIM YOUR BIKE STOLEN</string>
     <string name="enter_id_number_of_bike">Enter ID number of bike</string>
     <string name="example">Example: ABC12345678</string>
@@ -10,4 +10,7 @@
     <string name="claim">CLAIM</string>
     <string name="claim_your_bike_found">CLAIM YOUR BIKE FOUND</string>
     <string name="result_of_the_query_will_be_shown_here">Result of the query will be shown here.</string>
+    <string name="todo">TODO</string>
+    <string name="copyright"><![CDATA[© Orkun & Mustafa & Oğuzalp]]></string>
+    <string name="you_can_find_id_number_of_your_bike_on_receipt_of_your_bike">You can find ID number of your bike on receipt of your bike.</string>
 </resources>
